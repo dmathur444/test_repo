@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    jaxb:version="2.1"
+    xmlns:annox="http://annox.dev.java.net"
+    jaxb:extensionBindingPrefixes="annox">
+
+    <xsd:complexType name="TType">
+        <xsd:annotation>
+            <xsd:appinfo>
+                <annox:annotate>@java.lang.SuppressWarnings({"unchecked","rawtypes"})</annox:annotate>
+                <annox:annotate target="package">@javax.annotation.Generated({"XJC","JAXB2 Annotate Plugin"})</annox:annotate>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="TField" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:appinfo>
+                        <annox:annotate target="field">@com.fasterxml.jackson.annotation.JsonView(baseModel.Views.Internal.class)</annox:annotate>
+                        
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
